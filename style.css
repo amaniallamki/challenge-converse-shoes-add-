@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* PRODUCT */
+.product-container {
+  border: 4px solid black;
+  height: auto;
+  width: 825px;
+  margin: 50px auto;
+}
+/* inacase we want to usme the clearfix class if the collapsing phenomena occure 
+.container {
+  background-color: #ae0808;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+.SALE {
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  background-color: #ae0808;
+  padding: 7px 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+.product-title {
+  padding: 15px;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+/* ima100px; */
+.shoes-image {
+  width: 250px;
+  /* float: left; */
+}
+
+/* PRODUCT INFORMATION */
+/* (825-8-250-80)/2 */
+.product-ifo {
+  width: 243px;
+  /* float: left; */
+  /* margin-left: 40px; */
+  margin-top: 20px;
+}
+.price {
+  font-size: 24px;
+  /* float: left; */
+  /* margin-top: 70px; */
+}
+.shipping {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 20px;
+  /* float: right; */
+  margin-top: 8px;
+}
+/* we use here clear both to clear the flots from the discription paragraph 
+since it will float around the price and the free shipping ele;mnts 
+and we want to clear it from floating */
+.description {
+  margin-bottom: 10px;
+  clear: both;
+}
+.color {
+  height: 22px;
+  width: 22px;
+  margin-right: 12px;
+  /* display: inline-block; */
+}
+
+.color-black {
+  background-color: #000;
+}
+
+.color-blue {
+  background-color: #3700ff;
+}
+
+.color-red {
+  background-color: #ff1100;
+}
+
+.color-yellow {
+  background-color: #fdd700;
+}
+.color-green {
+  background-color: #01ae10;
+}
+
+.color-brown {
+  background-color: #a35700;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+/* (825-8-250-80)/2 */
+.product-details {
+  width: 243px;
+  float: left;
+  /* margin-left: 40px; */
+  margin-top: 20px;
+}
+.detailes-title {
+  text-transform: uppercase;
+  font-size: 16px;
+
+  margin-bottom: 15px;
+}
+.detailes-list {
+  list-style-type: square;
+  /* margin-left: 25px; */
+}
+.detailes-list li {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #000;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width: 825px;
+  padding: 15px;
+}
+.add-cart:hover {
+  background-color: #fff;
+  border-top: solid 4px;
+  color: #000;
+}
+.main {
+  /* display: flex; */
+}
+
+.colors {
+  display: flex;
+}
+
+.second {
+  display: flex;
+  gap: 70px;
+}
+
+/*Grid */
+.product-container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  /* remembner to remove the margins-left and margine-right 
+  to fit the column gaps properly and overfloating the grid
+  elements outside the container  */
+  column-gap: 40px;
+}
+/* .product-title {
+  grid-column: 1/-1;
+}
+
+.add-cart {
+  grid-column: 1/-1;
+} */
